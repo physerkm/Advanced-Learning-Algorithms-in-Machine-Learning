@@ -209,7 +209,7 @@ Then a<sup>[2]</sup> = w<sub>1</sub><sup>[2]</sup>.a<sup>[1]</sup> + b<sub>1</su
 
 So that becomes a<sup>[2]</sup> = w<sub>1</sub><sup>[2]</sup>(w<sub>1</sub><sup>[1]</sup>.x + b<sub>1</sub><sup>[1]</sup>) + b<sub>1</sub><sup>[2]</sup>.
 
-If we simplify, this becomes a<sup>[2]</sup> = (w<sub>1</sub><sup>[2]</sup>.w<sub>1</sub><sup>[1]</sup>)x + w<sub>1</sub><sup>[2]</sup>.b<sub>1</sub><sup>[1]</sup>) + b<sub>1</sub><sup>[2]</sup>
+If we simplify, this becomes a<sup>[2]</sup> = ((w<sub>1</sub><sup>[2]</sup>.w<sub>1</sub><sup>[1]</sup>)x + w<sub>1</sub><sup>[2]</sup>.b<sub>1</sub><sup>[1]</sup>) + b<sub>1</sub><sup>[2]</sup>
 
 
 It turns out that if I were to set w = w<sub>1</sub><sup>[2]</sup>.w<sub>1</sub><sup>[1]</sup> and set b = w<sub>1</sub><sup>[2]</sup>.b<sub>1</sub><sup>[1]</sup> + b<sub>1</sub><sup>[2]</sup> then what we've just shown is that a<sup>[2]</sup>=w.x+b. So w is just a linear function of the input x. Rather than using a neural network with one hidden layer and one output layer, we might as well have just used a linear regression model. If you're familiar with linear algebra, this result comes from the fact that a linear function of a linear function is itself a linear function. This is why having multiple layers in a neural network doesn't let the neural network compute any more complex features or learn anything more complex than just a linear function.
