@@ -1,12 +1,10 @@
-# **Machine Learning Specialization**
+# **Advanced Learning Algorithms**
 
-## **Advanced Learning Algorithms**
-
-### **TensorFlow implementation**
+## **TensorFlow implementation**
 
 This week, we're going to go over training of a neural network. I think being able to take your own data and train your own neural network on it is really fun. We'll look at how you could do that.
 
-#### **Train a Neural Network in TensorFlow**
+### **Train a Neural Network in TensorFlow**
 
 Let's continue with our running example of handwritten digit recognition recognizing this image as zero or a one. Here we're using the neural network architecture, where you have an input X, that is the image, and then the first hidden layer was 25 units, second hidden layer with 15 units, and then one output unit. If you're given a training set of examples comprising images X, as was the ground truth label Y, how would you train the parameters of this neural network?
 
@@ -65,7 +63,7 @@ model.compile(loss=BinaryCrossentropy())
 model.fit(X, Y, epochs=100)
 ```
 
-### **Training Details**
+## **Training Details**
 
 Before looking at the details of training in neural network, recall how you had trained a logistic regression model.
 
@@ -139,7 +137,7 @@ Now, I know that we're relying heavily on the TensorFlow library in order to imp
 
 Today, if you want to compute the square root of a number, like what is the square root of seven, well, once programmers had to write their own code to compute this, but now pretty much everyone just calls a library to take square roots, or matrix operations, such as multiplying two matrices together. When deep learning was younger and less mature, many developers were implementing things from scratch using Python or C++ or some other library. But today, deep learning libraries have matured enough that most developers will use these libraries, and, in fact, most commercial implementations of neural networks today use a library like TensorFlow or PyTorch. But as I've mentioned, it's still useful to understand how they work under the hood so that if something unexpected happens, which still does with today's libraries, you have a better chance of knowing how to fix it.
 
-### **Alternatives to the sigmoid activation**
+## **Alternatives to the sigmoid activation**
 
 So far, we've been using the sigmoid activation function in all the nodes in the hidden layers and in the output layer. And we have started that way because we were building up neural networks by taking logistic regression and creating a lot of logistic regression units and string them together. But if you use other activation functions, your neural network can become much more powerful.
 
